@@ -1,3 +1,5 @@
 class GrettingController < ActionController::Base
-  protect_from_forgery with: :exception
+  def show
+    render json: { data: 'dados da api aqui' }, status: 200
+  end
 end
